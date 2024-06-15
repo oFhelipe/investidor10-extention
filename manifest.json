@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Calculador de Valuation para Investidor10",
+  "version": "1.0",
+  "description": "Uma extensão que realiza cálculos de valuation para a pagina de detalhes de uma ação do site Investidor10",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://investidor10.com.br/acoes/*", "https://investidor10.com.br/bdrs/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
